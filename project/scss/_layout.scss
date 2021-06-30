@@ -1,0 +1,193 @@
+.header{
+    max-width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    position: relative;
+    margin: 9px auto;       
+}
+@media (max-width: 415px) {
+    .header{max-width: 100%;
+    }
+.logo-prim{margin-left: 20px;}
+}
+
+
+
+.nav{
+display: flex;
+align-content: center;
+li{font-size: 20px;
+    margin-left: 32px;
+    line-height: 38px;
+    a{
+    color: $link-color;
+    text-decoration: none;
+        i{margin-right: 8px;}  
+        &:hover{color: lighten($link-color, 20%);}
+    }
+}
+
+    
+.cart{   
+    display: none;    
+}
+
+
+
+.ham-icon {
+    position: absolute;
+    right: 0px;
+    top:-9px;
+    display: none;
+      }
+
+.dropdown{display: none;}
+    
+    }
+@media (max-width: 415px) {
+    .ham-icon{display: block;}
+    .nav{display: none;}
+    .cart{
+        margin-left: 20px;
+        display: block;
+        i{
+            color: $link-color;
+            position: absolute;
+            top: 16px;
+            right: 0px;
+            display: block;
+            font-size: 20px;
+        }
+        p{
+            position: absolute;
+            top: 5px;
+            right: 0;
+            font-size: 8px;
+            color: $lightest-color;
+            background: $primary-color;
+            display: block;
+            width: 8px;
+            border-radius: 4px;
+            
+        }
+    }
+    .dropdown {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 100%;
+        width: 100%;
+        max-height: 0px;
+        transition: all 0.8s;
+        overflow: hidden;
+        z-index: 120;
+        .active {
+            max-height: 280px;
+        }
+        li a {
+            display: block;
+            width: 100%;
+            background: $link-color;
+            color: #FFFFFF;
+            border-top: 1px solid #FFFFFF;
+            padding: 16px 0;
+            text-decoration: none;
+            text-align: center;
+            &:hover {
+            background: darken($color: $link-color, $amount: 20%);
+            }
+        }
+    }
+}
+
+
+.brands-bar li a{
+    &:hover{color: $primary-color-2;}
+}
+//想請問這個為什麼出不來，試了很久QwQ
+
+//footer
+
+.footer{
+    background-image: url(/img/index10.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center ;
+    padding-top: 600px;
+    position: relative;
+}
+
+.subscribe{
+    position: absolute;
+    top: 50%;
+    left: 25%;   
+    width: 345px;
+    h3{
+        font-size: 32px;
+        line-height: 48px;
+        color: #8D8D8D;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+    
+}
+
+.subscribeEmail{
+    border: 2px solid $primary-color;
+    border-radius: 4px;
+    background-color: #fff;
+    height: 60px;
+    input{
+        font-size: 16px;
+        padding: 18px 0 18px 16px;
+        border-style: none;
+        }
+    button{
+        width: 130px;
+        border: 2px solid $primary-color;
+        font-size: 16px;
+        padding: 20px 18px;
+        background-color: $primary-color;
+        color: #fff;
+    }
+}
+
+
+
+.footerBar-link{
+    display: flex;
+    align-content: center;
+    margin: 28px 0;
+li{
+    font-size: 20px;
+    margin-left: 36px;
+    line-height: 30px;
+    }
+ li a{
+    color: #fff;
+    &:hover{color: darken($color: $primary-color, $amount: 10%);}}
+ }
+
+
+
+
+ @media (max-width:416px) {
+    .footer{
+        margin-top: -20px;
+    }
+    .subscribe{ 
+    @include absolute-center;
+    }
+    .subscribeEmail button{padding: 20px 10px;}
+
+
+    .logo-white{
+    margin-left: 15px;
+    }
+    .footerBar-link{
+    display: none;
+    }
+
+
+}

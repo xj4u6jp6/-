@@ -1,0 +1,26 @@
+$link-color:#8D8D8D;
+$lightest-color:white;
+$primary-color: #916000 ;
+$primary-color-2: #AC8A46 ;
+$bg-color-gray:#E0E0E0;
+
+
+
+
+@mixin hidding-text {
+    text-indent: 101%;
+    white-space: nowrap;
+    overflow: hidden;
+    }
+
+//@mixin mobile {
+    //@media (max-width:375px ) {
+        //@content    }}
+
+@mixin absolute-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}

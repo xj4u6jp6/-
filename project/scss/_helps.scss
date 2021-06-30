@@ -1,0 +1,108 @@
+ 
+//文字設定
+.fz-40{font-size: 40px;}
+.fz-32{font-size: 32px;}
+.fz-28{font-size: 28px;}
+.fz-24{font-size: 24px;}
+.fz-20{font-size: 20px;}
+.fz-16{font-size: 16px;}
+.fz-14{font-size: 14px;}
+.fw-bold{font-weight: bold;}
+.line-through{
+	text-decoration: line-through;
+	color: #8D8D8D;}
+
+.mfz{font-size: 16px;
+line-height: 22px;}
+
+.lh-52{line-height: 52;}
+
+//間距設定margin & padding
+.mb-80{margin-bottom: 80px;}
+.mb-60{margin-bottom: 60px;}
+.mb-52{margin-bottom: 52px;}
+.mb-30{margin-bottom: 30px;}
+.mr-30-c{margin-right: 15px;
+	margin-left: 15px;}
+.mr-30{margin-right: 30px;}
+.mb-20{margin-bottom: 20px;}
+.mb-12{margin-bottom: 12px;}
+.mr-12{margin-right: 12px;}
+
+.mb-8{margin-bottom: 8px;}
+.mb-16{margin-bottom: 16px;}
+.mb-24{margin-bottom: 24px;}
+.mb-32{margin-bottom: 32px;}
+
+.ml-8{margin-left: 8px;}
+.ml-20{margin-left: 20px;}
+
+.pb-40{padding-bottom: 40px;}
+.pt-40{padding-top: 40px;}
+.pb-12{padding-bottom: 12px;}
+.pt-12{padding-top: 12px;}
+.pt-correction{padding-right: -15px;
+padding-left: -15px;}
+
+.center{
+	margin-left: auto;
+	margin-right: auto;
+  }
+
+//常用長寬width & height
+
+.p-card-size{
+	max-width: 255px;
+	max-height: 255px;}
+
+.i-card-size{
+	max-width: 555px;
+	max-height: 555px;}
+
+.w555{width: 555px;}
+.w350{max-width: 350px;}
+
+.w720{max-width: 720px;}
+.w1110{max-width: 1110px;}
+.w1140{max-width: 1140px;}
+.h520{max-height: 520px;}
+
+.h1080{max-height: 1080px;}
+
+//display
+.db{display: block;}
+
+.flex-start{
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+}
+
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items:center;
+}
+.flex-end{
+	display: flex;
+    justify-content: end;
+    align-content: center;
+}
+
+.flex-space-between{
+	display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.wrap{
+	flex-wrap: wrap;
+}
+.row-reverse{
+	flex-direction: row-reverse;
+}
+
+//colors
+.bg-color-prim{background-color: $primary-color;}
+.color-prim{color: $primary-color;}
+.color-prim2{color: $primary-color-2;}
+.color-white{color: $lightest-color;}

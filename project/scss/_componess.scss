@@ -1,0 +1,51 @@
+
+
+
+
+.outline-btn{
+  display: block;
+  height: 60px;
+  width: 365px;
+  border: 2px solid ;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 56px;
+  color: inherit;
+  &:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  @media (max-width:415px){
+    width: 345px;
+  }
+}
+
+.pagnation{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    a{
+        margin-right: 10px;
+        margin-left: 10px;
+    &:hover{
+        color: $primary-color-2;
+        text-decoration: underline;}
+    }
+}
+
+.logo-white{ 
+    background-image: url(/img/d’Perfumewhite@2x.png);  
+    background-size:contain;
+    width: 128px;
+    height: 38px;  
+    @include hidding-text;
+}
+
+.logo-prim{ 
+    background-image: url(/img/d’Perfume@2x.png);  
+    background-size:contain;
+    width: 128px;
+    height: 38px;  
+    @include hidding-text;
+}
+
+

@@ -1,0 +1,141 @@
+//banner photo
+.banner{ 
+    background-image: url(https://hexschool.github.io/webLayoutTraining1st/perfume-week6/index1.jpg);
+    background-size: cover;
+    background-position: center ;
+    padding-top: 870px;
+    position: relative;
+}
+
+.banner-text{
+   position: absolute;
+   top: 33%;
+   left: 50%;
+   max-width: 445px;
+   color: #FFFFFF;
+ p{
+    display: block;
+    max-width: 445px;
+    }
+}
+@media(max-width:415px) {
+  .banner{padding-top: 480px;
+  margin-bottom: 40px;}
+  .banner-text{
+    @include absolute-center;
+    max-width: 445px;
+    color: #FFFFFF;}
+}
+
+//product & recycle
+.product-photo1 ,.product-photo2 ,.product-photo3 {
+  width: 555px;
+	height: 555px;
+  background-size: cover;
+}
+.product-photo1{ 
+  background-image: url(/img/index2.jpg);
+}
+.product-photo2{ 
+  background-image: url(/img/index3.png);
+}
+.product-photo3{ 
+  background-image: url(/img/index4.jpg);
+}
+.product-photo4{ 
+  background-image: url(/img/index5.jpg);
+  width: 555px;
+	height: 1080px;
+  background-size:cover;
+  background-position: center;
+}
+.product-photo4-text{
+  width: 555px;
+  padding: 90px auto;
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  p{
+    font-size: 16px;
+    margin-bottom: 52px;
+  } 
+}
+
+
+
+.product-gray{
+  background-color: $bg-color-gray;
+  margin-bottom: 60px;
+}
+
+
+
+.product-photo5 , .product-photo6 ,.product-photo7 {
+  width: 350px;
+  height: 540px;
+  background-size: cover;
+  background-position: center;
+}
+.product-photo5{
+  background-image: url(/img/index6.jpg);
+}
+.product-photo6{
+  background-image: url(/img/index7.jpg);
+}
+.product-photo7{
+  background-image: url(/img/index8.jpg);
+}
+
+.recycle{
+  width: 720px;
+  height: 520px;
+  background-image: url(/img/index9.jpg);
+  background-size:cover;
+  background-position: center;
+}
+
+@media (max-width:416px) {
+  .row-reverse{
+    flex-direction:column;    
+  }
+  .flex-center{
+    flex-direction:column;
+  }
+  .product-photo1 ,.product-photo2 ,.product-photo3,.product-photo5 ,.product-photo6 ,.product-photo7, .w555{
+    max-width: 345px;
+    max-height: 350px;
+  }
+  .product-photo4{ 
+    max-width: 345px;
+    max-height: 680px;
+  }
+  .product-photo4-text{
+    max-width: 345px;
+    padding: 8px 0 0 0;
+    h2 {
+      margin-bottom: 4px;
+    }
+    p{
+      margin-bottom: 20px;
+    } 
+  }
+
+  .product-gray{
+    margin-top: -20px;
+    margin-bottom: 40px;
+  }
+  .product-photo5 ,.product-photo6{
+    background-position: 50% 100%;
+  }
+  .product-photo5 ,.product-photo6 ,.product-photo7{
+    margin-top: 32px; 
+  }
+
+  
+  .recycle{
+    max-width: 345px;
+    max-height: 520px;
+    margin: 0 auto;
+  }
+}
